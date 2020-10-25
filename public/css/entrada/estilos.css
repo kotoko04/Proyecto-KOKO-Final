@@ -1,0 +1,131 @@
+*
+{
+    border: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+view:last-child
+{
+    padding-right: 0px;
+}
+
+a:link {
+    text-decoration: none;
+
+}
+
+a{
+    color: white;
+    font-size: 16px;
+}
+
+
+.banner
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all .2s ease-in-out;
+    background-image: url(../imagenes/f1.jpg);
+    opacity: .9;
+    animation: baner_movible 28s infinite linear;
+}
+
+/*Encabezado*/
+
+.enc
+{
+    padding-top:10px;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.vent
+{
+    margin-left: auto;
+    display:flex;
+    color: seashell;
+}
+
+.view
+{
+    padding-right:10px;
+    font-size: 15pt;
+}
+
+/*Fin de Ecabezado*/
+
+/*Cuerpo*/
+
+.banner-cont
+{
+    width: 100%;
+    min-height: 94vh;
+    background-color: rgba(0, 0, 0, .4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.banner-cont h1
+{
+    font-size: 40px;
+    color: seashell;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.banner-cont a
+{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 9px 20px;
+    border-bottom: solid 3px #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
+    border-radius: 5px;
+}
+
+.banner-cont a:hover
+{
+    border-bottom: solid 4px rgb(150, 177, 228);
+}
+
+@keyframes baner_movible{
+    0%{
+        background-image:url(/img/f1.jpg)
+    }
+    25%{
+        background-image: url(/img/f1.jpg);
+    }
+    26%{
+        background-image: url(/img/f2.jpg);
+    }
+    50%{
+        background-image: url(/img/f2.jpg);
+    }
+    51%{
+        background-image: url(/img/f3.jpg);
+    }
+    75%{
+        background-image: url(/img/f3.jpg);
+    }
+    76%{
+        background-image: url(/img/f4.jpg);
+    }
+    100%{
+        background-image: url(/img/f4.jpg);
+    }
+}
